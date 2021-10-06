@@ -1,0 +1,38 @@
+.inner_nav {
+	@apply px-4 sm:px-6 py-6 flex justify-between items-center;
+}
+
+.nav_list {
+	@apply flex;
+}
+.nav_item {
+	@apply ml-8 text-xl;
+}
+.activeLink {
+	@apply font-medium;
+}
+.nav_icon {
+	@apply hidden;
+}
+.nav_link {
+}
+@media only screen and (max-width: 800px) {
+	.inner_nav {
+		@apply block;
+	}
+	.logo {
+		@apply block absolute top-0 left-0 my-2 mx-4;
+	}
+	.nav_icon {
+		@apply block absolute top-0 right-0 my-2 mx-4;
+	}
+	.nav_list {
+		@apply hidden pl-6 mt-10;
+	}
+	.nav_list.navClick {
+		@apply block transition duration-1000 ease-in-out h-screen;
+	}
+	.nav_item {
+		@apply pb-4 pt-2;
+	}
+}
