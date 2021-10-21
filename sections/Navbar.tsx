@@ -11,7 +11,7 @@ interface Props {}
 const Navbar: React.FC<Props> = () => {
 	const { systemTheme, theme, setTheme } = useTheme();
 	const [mounted, setMounted] = useState(false);
-	const [clicked, setClicked] = useState(true);
+	const [clicked, setClicked] = useState(false);
 	const { nav, inner_nav, nav_item, activeLink, nav_list, nav_icon, navClick } =
 		styles;
 	const router = useRouter();
@@ -21,6 +21,11 @@ const Navbar: React.FC<Props> = () => {
 		setMounted(true);
 	}, []);
 
+	const Brozwer = (link: string) => {
+		router.push(link);
+		setClicked(false);
+	};
+
 	const renderThemeChanger = () => {
 		if (!mounted) return null;
 		const currentTheme = theme === 'system' ? systemTheme : theme;
@@ -29,7 +34,10 @@ const Navbar: React.FC<Props> = () => {
 				<SunIcon
 					className='w-7 h-7'
 					role='button'
-					onClick={() => setTheme('light')}
+					onClick={() => {
+						setTheme('light');
+						setClicked(false);
+					}}
 				/>
 			);
 		} else {
@@ -37,17 +45,20 @@ const Navbar: React.FC<Props> = () => {
 				<MoonIcon
 					className='w-7 h-7'
 					role='button'
-					onClick={() => setTheme('dark')}
+					onClick={() => {
+						setTheme('dark');
+						setClicked(false);
+					}}
 				/>
 			);
 		}
 	};
 	return (
 		<nav
-			className={` backdrop-blur-md fixed top-0 w-full border-b-2 border-solid  border-gray-700 dark:border-gray-200 `}>
+			className={` backdrop-blur-md z-10 fixed top-0 w-full border-b-2 border-solid mb-14 border-gray-700 dark:border-gray-200 `}>
 			<div className='container mx-auto '>
 				<div className={inner_nav}>
-					<Logo />
+					<Logo onClick={() => Brozwer('/')} />
 					<div className={`${nav_icon}`}>
 						{!clicked ? (
 							<MenuAlt1Icon
@@ -74,7 +85,7 @@ const Navbar: React.FC<Props> = () => {
 								router.asPath === '/' ? activeLink : ''
 							}`}>
 							<Link href='/'>
-								<a>Home</a>
+								<a onClick={() => Brozwer('/')}>Home</a>
 							</Link>
 						</li>
 						<li
@@ -82,23 +93,23 @@ const Navbar: React.FC<Props> = () => {
 								router.asPath === '/projects' ? activeLink : ''
 							}`}>
 							<Link href='/projects'>
-								<a>Projects</a>
+								<a onClick={() => Brozwer('/projects')}>Projects</a>
 							</Link>
 						</li>
 						<li
 							className={`${nav_item} ${
 								router.asPath === '/blog' ? activeLink : ''
 							}`}>
-							<Link href='/'>
-								<a>Blog</a>
+							<Link href='/blog'>
+								<a onClick={() => Brozwer('/blog')}>Blog</a>
 							</Link>
 						</li>
 						<li
 							className={`${nav_item} ${
 								router.asPath === '/about' ? activeLink : ''
 							}`}>
-							<Link href='/'>
-								<a>About</a>
+							<Link href='/about'>
+								<a onClick={() => Brozwer('/about')}>About</a>
 							</Link>
 						</li>
 						<li
@@ -106,7 +117,7 @@ const Navbar: React.FC<Props> = () => {
 								router.asPath === '/contact' ? activeLink : ''
 							}`}>
 							<Link href='/contact'>
-								<a>Contact</a>
+								<a onClick={() => Brozwer('/')}>Contact</a>
 							</Link>
 						</li>
 						<li className={nav_item}>{renderThemeChanger()}</li>

@@ -1,9 +1,8 @@
 import Link from 'next/link';
-import Layout from '../sections/Layout';
 
 const NotFound = () => {
 	return (
-		<Layout>
+		<>
 			<div className='container mx-auto py-16 h-full flex flex-col justify-center items-center space-y-12'>
 				<div className='text-center space-y-6'>
 					<h1 className='text-3xl sm:text-6xl'>404 - Page not found</h1>
@@ -15,7 +14,7 @@ const NotFound = () => {
 					</a>
 				</Link>
 			</div>
-		</Layout>
+		</>
 	);
 };
 export default NotFound;

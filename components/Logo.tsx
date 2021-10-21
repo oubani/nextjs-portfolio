@@ -1,15 +1,19 @@
 import { TerminalIcon } from '@heroicons/react/outline';
 import styled from '../styles/Navbar.module.css';
+import Link from 'next/link';
 
-interface Props {}
+type Props = {
+	onClick?: (s: string) => void;
+};
 
 const Logo: React.FC<Props> = () => {
 	return (
-		<p className={`flex  items-center space-x-1 text-blue-500 ${styled.logo} `}>
-			<span className='font-bold text-2xl tracking-tight whitespace-nowrap'>
+		<Link href='/'>
+			{/* className={`flex  items-center   ${styled.logo} `} */}
+			<a className='font-bold text-2xl space-x-1 tracking-tight text-blue-500 whitespace-nowrap'>
 				Oubani Ayoub
-			</span>
-		</p>
+			</a>
+		</Link>
 	);
 };
 export default Logo;
