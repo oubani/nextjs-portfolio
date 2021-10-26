@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Hero from '../components/Hero';
 import Projects from '../components/Projects';
 import Skills from '../components/Skills';
+import { projects } from '../projects/projects';
 
 const Home: NextPage = () => {
 	return (
@@ -17,7 +18,7 @@ const Home: NextPage = () => {
 			</Head>
 			<Hero />
 			<Skills />
-			<Projects />
+			<Projects projects={projects} />
 		</>
 	);
 };

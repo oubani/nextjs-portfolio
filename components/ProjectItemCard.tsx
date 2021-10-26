@@ -12,10 +12,12 @@ const ProjectItemCard: React.FC<Props> = ({ project }) => {
 	return (
 		<div className='shadow-2xl '>
 			<div className='px-4 py-2'>
-				<h1 className='text-2xl font-medium text-gray-600'>{name}</h1>
+				<h1 className='text-2xl font-medium  dark:text-white text-gray-600'>
+					{name}
+				</h1>
 			</div>
 			<div>
-				<img src={image} alt={name} />
+				<img src={`/images/projects/${image}`} alt={name} className='w-full' />
 			</div>
 			<div className='px-6 py-4  ' style={{ borderBottom: '1px solid gray' }}>
 				{tags.map((tag: string) => (
