@@ -14,7 +14,7 @@ const about: React.FC<Props> = () => {
 				<div className=' border-l-4 py-6 px-4 rounded-lg border-black '>
 					<h1 className='text-4xl mb-2'>Hi, I{"'"}am Oubani Ayoub </h1>
 					<p className='text-2xl'>
-						I{"'"}am full-stack web developer graduated with a Higher
+						I{"'"}m full-stack web developer graduated with a Higher
 						Technician&apos;s Certificate in Multimedia and Web Design. And a
 						Bachelor degree of Science and techniques option Software
 						Engineering, I am very flexible and adaptive to learn new things. I

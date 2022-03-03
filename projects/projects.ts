@@ -16,14 +16,6 @@ export const projects: ProjectType[] = [
 		tags: ['laravel', 'react', 'redux', 'mysql'],
 	},
 	{
-		name: 'Search Recipes App',
-		image: 'searchrecipe.jpg',
-		desc: 'website built using react for searching for recipes using edamam api',
-		demoLink: 'https://searchrecipes2.netlify.app/',
-		githubLink: 'https://github.com/oubani/recipeapp',
-		tags: ['react'],
-	},
-	{
 		name: 'Images Gallery',
 		image: 'pixalab-01.jpg',
 		desc: 'Displaying images from pixabay',
@@ -34,7 +26,7 @@ export const projects: ProjectType[] = [
 	{
 		name: 'YoussefLight',
 		image: 'yousseflight.png',
-		desc: 'website built using react for searching for recipes using edamam api',
+		desc: 'Web site build for a client to show his work and his projects',
 		demoLink: 'https://youssefmoumou.netlify.app/',
 		githubLink: 'https://github.com/oubani/younnesLight',
 		tags: ['tailwind'],
