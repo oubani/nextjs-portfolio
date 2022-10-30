@@ -13,7 +13,7 @@ const Home: NextPage = () => {
         <title>Oubani Ayoub | fullstack web Freelancer </title>
         <meta
           name="description"
-          content="Oubani ayoub, I web designer and fullstack web developer, Freelancer "
+          content="Oubani ayoub, I m fullstack javascript web developer, Freelancer"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
