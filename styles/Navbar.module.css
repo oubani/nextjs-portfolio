@@ -24,7 +24,7 @@
 		@apply block absolute top-0 left-0 my-2 mx-4;
 	}
 	.nav_icon {
-		@apply block absolute top-0 right-0 my-2 mx-4;
+		@apply block absolute top-5 right-0 my-2 mx-4;
 	}
 	.nav_list {
 		@apply hidden pl-6 mt-10;
