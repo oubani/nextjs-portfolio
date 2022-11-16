@@ -3,13 +3,13 @@ import skill from "./skill.svg";
 // languages known
 import html from "./skills-icons/languages-known/html.svg";
 import css from "./skills-icons/languages-known/css.svg";
-import php from "./skills-icons/languages-known/php.svg";
 import typescript from "./skills-icons/languages-known/typescript.svg";
 import javascript from "./skills-icons/languages-known/javascript.svg";
 // frontEnd
 import bootstrap from "./skills-icons/frontend/bootstrap.svg";
 import react from "./skills-icons/frontend/react.svg";
 import tailwind from "./skills-icons/frontend/tailwind.svg";
+import next from "./skills-icons/frontend/myFrame.svg";
 // backend & techs
 import express from "./skills-icons/Backend&techs/express.svg";
 import git from "./skills-icons/Backend&techs/git.svg";
@@ -40,7 +40,6 @@ const Skills: React.FC<Props> = () => {
             <div className="flex gap-4 mt-2">
               <Image src={html} width={width} height={height} alt="html" />
               <Image src={css} width={width} height={height} alt="css" />
-              <Image src={php} width={width} height={height} alt="php" />
               <Image
                 src={javascript}
                 width={width}
@@ -58,19 +57,34 @@ const Skills: React.FC<Props> = () => {
           <div className="mb-4">
             <h2 className="text-center md:text-right text-2xl">Frontend</h2>
             <div className="flex gap-4 mt-2">
-              <Image src={react} width={width} height={height} alt="ReactJs" />
-              <Image src={react} width={width} height={height} alt="ReactJs" />
+              <Image
+                src={react}
+                width={width}
+                height={height}
+                alt="ReactJs"
+                loading="lazy"
+              />
+              <Image
+                src={next}
+                width={width}
+                height={height}
+                alt="NextJs"
+                loading="lazy"
+              />
+
               <Image
                 src={tailwind}
                 width={width}
                 height={height}
                 alt="TailwindCss"
+                loading="lazy"
               />
               <Image
                 src={bootstrap}
                 width={width}
                 height={height}
                 alt="Bootstrap"
+                loading="lazy"
               />
             </div>
           </div>
