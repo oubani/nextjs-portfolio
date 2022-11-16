@@ -19,8 +19,7 @@ const Hero: React.FC<Props> = () => {
         </h1>
         <div className="flex flex-col md:flex-row">
           <a
-            href="
-            https://drive.google.com/file/d/15fX3oftYQfbOtfpLOliO0rV4CB0YIgrz/view?usp=sharing"
+            href="https://drive.google.com/file/d/1CES81HOLZ625h4GD6wb6dfO-uxtAB6HT/view?usp=sharing"
             rel="noopener noreferrer "
             target="_blank"
             className="bg-blue-600 sm:inline-block mt-2 mr-2 hover:bg-blue-700 text-white shadow-inner px-8 py-3 rounded-md border-2 border-blue-600 hover:border-blue-700 text-lg sm:text-xl focus:outline-none focus:ring-4 focus:ring-blue-600 focus:ring-opacity-50 whitespace-nowrap "
