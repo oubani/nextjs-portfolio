@@ -1,8 +1,8 @@
 ---
 title: "Don't hate what you don't understand "
-date: 'October 6, 2021 '
-excerpt: 'My story with javascript, and how it stated from hate to love? '
-cover_image: '/images/posts/dont-hate.jpg'
+date: "October 6, 2021 "
+excerpt: "My story with javascript, and how it stated from hate to love? "
+cover_image: "/images/posts/dont-hate.jpg"
 ---
 
 # why I hated Javacript
@@ -16,7 +16,7 @@ After I graduated from BTS in the summer of 2019. I was confused between learnin
 
 # How I study
 
-In The summer of 2019, I decided to start learning javascript from scratch, I started learning CSS also, then I moved to Javascript, in that period of time when I have built some landing pages, a simple calculator, surface converter, etc. Then I started learning React Js, I built my portfolio using it, now I replaced with NESXTJS, after learning REACTJS and building some projects using it, like Image gallery, recipes app, Github users finder, and e-commerce using react for the front end and Laravel for the back end, I developed a small React native application, then I started learning Express js, and I built a back end API named Pet Store,you can check my projects [Here]https://github.com/oubani).
+In The summer of 2019, I decided to start learning javascript from scratch, I started learning CSS also, then I moved to Javascript, in that period of time when I have built some landing pages, a simple calculator, surface converter, etc. Then I started learning React Js, I built my portfolio using it, now I replaced with NESXTJS, after learning REACTJS and building some projects using it, like Image gallery, recipes app, Github users finder, and e-commerce using react for the front end and Laravel for the back end, I developed a small React native application, then I started learning Express js, and I built a back end API named Pet Store,you can check my projects [https://github.com/oubani](https://github.com/oubani).
 
 # Resources
 
